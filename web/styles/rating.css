@@ -1,0 +1,177 @@
+.rating {
+    border: none;
+}
+
+.myratings {
+    font-size: 85px;
+    color: green
+}
+
+.rating>[id^="star"] {
+    display: none
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 2.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005"
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute
+}
+
+.rating>label {
+    color: #d0d0d0;
+    float: right
+}
+
+.rating>[id^="star"]:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: #05a771
+}
+
+.rating>[id^="star"]:checked+label:hover,
+.rating>[id^="star"]:checked~label:hover,
+.rating>label:hover~[id^="star"]:checked~label,
+.rating>[id^="star"]:checked~label:hover~label {
+    color: #05a771
+}
+
+.reset-option {
+    display: none
+}
+
+.reset-button {
+    margin: 6px 12px;
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase
+}
+
+
+/*card horizontall*/
+.menu-wrapper {
+position: relative;
+max-width: 100%;
+height: auto;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.menu {
+box-sizing: border-box;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+-webkit-overflow-scrolling: touch;
+}
+.menu .item {
+display: inline-block;
+width: 250px;
+height: 100%;
+white-space: normal;
+margin-left:-53px;
+margin-right:40px;
+padding: 1em;
+box-sizing: border-box;
+-webkit-overflow-scrolling: touch;
+}
+
+.menu-wrapper2 {
+position: relative;
+max-width: 100%;
+height: auto;
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+.menu2 {
+box-sizing: border-box;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+-webkit-overflow-scrolling: touch;
+}
+.menu2 .item2 {
+display: inline-block;
+width: 300px;
+height: 100%;
+white-space: normal;
+margin-left:-53px;
+margin-right:40px;
+padding: 1em;
+box-sizing: border-box;
+}
+
+.paddle {
+position: absolute;
+top: 50%;
+border-radius:50%;
+border:1px solid #bebebe;
+background:#fff;
+height:45px;
+width: 3em;
+}
+
+.paddle:hover {
+border:1px solid #3d3c3c;
+}
+
+.left-paddle {
+left: 0;
+}
+
+.right-paddle {
+right: 0;
+}
+
+
+.left-paddle2 {
+left: 0;
+}
+
+.right-paddle2 {
+right: 0;
+}
+
+.hidden {
+display: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.bantuans::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bantuans {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.menu2::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.menu2 {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+  
